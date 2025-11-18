@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Лабораторна робота №11</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div id="card" class="card">Натисни, щоб почати</div>
+
+<div class="progress">
+<button id="prev">&#8592;</button>
+<span id="step">0/10</span>
+<button id="next">&#8594;</button>
+</div>
+
+<input type="text" id="answer" placeholder="Введіть переклад..." />
+
+<div class="stats">
+<span class="correct">Вірно: <span id="correctCount">0</span></span>
+<span class="wrong">Невірно: <span id="wrongCount">0</span></span>
+</div>
+</div>
+
+<div id="modal" class="modal">
+<div class="modal-content">
+<h2>Рівень знань</h2>
+<p id="resultText"></p>
+<button id="closeModal">Закрити</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
